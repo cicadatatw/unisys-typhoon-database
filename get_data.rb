@@ -53,7 +53,6 @@ for year in years
 			CSV.open("data/#{yr}/#{datum[0]}.csv", "w") do |csv|
 			  csv << ["ADV", "LAT", "LON", "TIME", "WIND", "PR", "STAT"]
 			  for row in table
-			  	puts row
 			  	csv << row
 			  end
 			end
