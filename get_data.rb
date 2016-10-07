@@ -16,7 +16,7 @@ top_path = "http://weather.unisys.com/hurricane/w_pacific/"
 
 pat1 = /<a href="(\d{4}\/index.php)">/
 pat2 = /<tr><td width="20" align="right" style="color:black;">(\d+)<\/td><td width="250" style="color:black;">([\w\s]+ #\d+)\s+<\/td><td width="125" align="right" style="color:black;">([\w\d\s\-]+)\s+<\/td><td width="40" align="right" style="color:black;">\s?(\d+)\s<\/td><td width="40" align="right" style="color:black;">\s*([\d\-]+)\s+<\/td><td width="40" align="right" style="color:black;">\s+([\d\-]+)<\/td><td>&nbsp;<\/td>/
-pat3 = /(\d{1,3})\s+(\d+\.\d+)\s+(\d+\.\d+)\s(\d{2}\/\d{2}\/\d{2}Z)\s{1,5}([\d\-]+)\s{1,5}(\-|\d{3,4})\s([\w\s\d\-]+)$/
+pat3 = /(\d{1,3})\s+(\d+\.\d+)\s+(\d+\.\d+)\s(\d{2}\/\d{2}\/\d{2}Z)\s{1,5}([\d\-]+)\s{1,5}(\-|\d{3,4})\s([\w]+[\-\s][\w\d]+)$/
 
 if year == "all"
 	top_page = open(top_url).read
@@ -50,9 +50,10 @@ for year in years
 		    	i.write(dat)
 			end
 			table = dat.scan(pat3)
-			CSV.open("data/#{yr}/#{datum[0]}.csv", "w+:utf-8") do |csv|
+			CSV.open("data/#{yr}/#{datum[0]}.csv", "w") do |csv|
 			  csv << ["ADV", "LAT", "LON", "TIME", "WIND", "PR", "STAT"]
 			  for row in table
+			  	puts row
 			  	csv << row
 			  end
 			end
