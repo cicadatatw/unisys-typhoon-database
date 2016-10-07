@@ -1,0 +1,521 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Unisys Weather  - 1956 Hurricane/Tropical Data for Western Pacific </title>
+<meta name="description" content="The intent of this weather site is to provide a complete source of graphical weather 		information. This is intended to satisfy the needs of the weather professional, but can be a tool for the casual user as well. The graphics and data are displayed as a meteorologist would expect to see. For the novice user, there are detailed explanation pages to guide them through the various plots, charts and images. The data on this site are provided from the National Weather Service via the NOAAPORT satellite data service. All the images are generated using the Weather Processor (WXP) analysis package which is available from Unisys. "/>
+<meta name="keywords" content="weather, unisys, unisys weather, weather maps, maps, nam, wrf, GFS, GFSx, hurricane, radar, satellite, surface, upper air" />
+<meta name="copyright" content="Unisys Corp - 2014" />
+<meta name="author" content="Unisys Corporation" />
+<meta name="email" content="technical-support@weather.unisys.com" />
+<meta name="Distribution" content="Global" />
+<meta name="Rating" content="General" />
+<meta name="Robots" content="INDEX,FOLLOW" />
+<meta name="Revisit-after" content="7 Days" />
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Refresh" content="900" />
+<meta http-equiv="X-UA-Compatible" content="IE=8"/>
+<link rel="stylesheet" type="text/css" href="http://weather.unisys.com/css/WMAX.v1.0.2.css" />
+</head>
+<body>
+<div id="wrap">
+  <div id="top-menu">
+    <ul id="top-navigation" class="inline-navigation-list">
+      <li><a href="http://www.unisys.com" title="Unisys Home Page">Unisys.com</a></li>
+      <li><a href="http://weather.unisys.com/index.php" title="Unisys Weather">Weather Home</a></li>
+      <li><a href="http://weather.unisys.com/analyses.php" title="Analyses">Analyses</a></li>
+      <li><a href="http://weather.unisys.com/forehome.php" title="Forecast">Forecasts</a></li>
+      <li><a href="http://weather.unisys.com/archives.php" title="Archives">Archives</a></li>
+      <li><a href="http://weather.unisys.com/links.php" title="NOAA Links">NOAA Links</a></li>
+      <li><a href="http://weather.unisys.com/contactus.php" title="Contact Us">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <div id="header"> <a href="http://unisys.com"><img src="http://weather.unisys.com/images/Unisys_logo-red_on_white.gif" alt="Unisys" /></a>
+    <h1>Unisys Weather</h1>
+  </div>
+
+<div id="leftside">
+  <ul class="avmenu">
+    <li><a href="http://weather.unisys.com/index.php" class="blue">Unisys Weather</a></li>
+    <li><a href="http://weather.unisys.com/index.php">Weather Home</a></li>
+    <li><a href="http://weather.unisys.com/news">Weather News</a></li>
+    <li><a href="http://weather.unisys.com/solutions/index.php">Weather Solutions</a></li>
+    <li><a href="http://weather.unisys.com/info/index.php">Information</a></li>
+    <li><a href="http://weather.unisys.com/content.php">Contents</a></li>
+    <li><a href="http://weather.unisys.com/analyses.php" class="blue">Analyses</a></li>
+    <li><a href="http://weather.unisys.com/satellite/index.php">Satellite Images</a></li>
+    <li><a href="http://weather.unisys.com/surface/index.php">Surface Data</a></li>
+    <li><a href="http://weather.unisys.com/upper_air/index.php">Upper Air Data</a></li>
+    <li><a href="http://weather.unisys.com/radar/index.php">Radar Data</a></li>
+    <li><a href="http://weather.unisys.com/forehome.php" class="blue">Forecasts</a></li>
+    <li><a href="http://weather.unisys.com/mos/index.php">Model Statistics</a></li>
+    <li><a href="http://weather.unisys.com/nam/index.php">NAM/Wrf Model</a></li>
+    <li><a href="http://weather.unisys.com/gfs/index.php?r=us">GFS/Avn Model</a></li>
+    <li><a href="http://weather.unisys.com/rap/index.php">RAP Model</a></li>
+    <li><a href="http://weather.unisys.com/ecmwf/index.php">ECMWF Model</a></li>
+    <li><a href="http://weather.unisys.com/archives.php" class="blue">Archive</a></li>
+    <li><a href="http://weather.unisys.com/hurricane/index.php">Hurricane Data</a></li>
+    <li><a href="http://weather.unisys.com/archive/index.php">Archive of Images</a></li>
+    <li><a href="http://weather.unisys.com/usgs/index.php">USGS Maps</a></li>
+  </ul>
+</div>
+
+<div id="extras">
+  <ul class="avmenu">
+    <li><a href="http://weather.unisys.com/foresetup.php" class="blue">Get a Forecast</a></li>
+  </ul>
+
+<script type="text/javascript">
+function fsubmit()
+{
+     document.getElementById("Forecast").submit();
+}
+</script>
+
+  <form method="get" id="Forecast" action="http://weather.unisys.com/forecast.php">
+    <p class="center"> Enter a zip code or city name to get forecast:
+      <input type="text" name="Name" id="Name" size="15" />
+      <br />
+      <button type="submit" style="border:none; background-color:transparent;">
+         <img src="http://weather.unisys.com/images/gobutton-blue.png" id="Go" alt="Get Forecast Data" style="height:20px;" />
+      </button>
+      <a href="http://weather.unisys.com/foresetup.php"><img src="http://weather.unisys.com/images/setupbutton-blue.png" alt="Setup Location" height="20" width="70" /></a> </p>
+  </form>
+  <script type="text/javascript">
+                <!-- HIDE
+                var index = document.cookie.indexOf("ZIP")
+                var zipcode = 0
+                var region = ""
+                if( index != -1 ){
+                   //zipcode = parseInt( document.cookie.substring(index+4,index+9),10)
+                   zipcode = document.cookie.substring(index+4,index+9)
+                   var validateZipCode = function() {
+                     var zipcodeRegexp = /^\d{5}$/;
+                     var zipTest = zipcodeRegexp.test(zipcode);
+   
+                     if (zipTest == false) {
+                       return false;
+                     }
+                   }
+                   validateZipCode();
+
+                    if( ! isNaN(zipcode))
+
+                    document.getElementById('Name').value = zipcode
+
+                   if( zipcode >= 01000 && zipcode <= 19699 )
+                      region = "ne"
+                   else if( zipcode >= 19700 && zipcode <= 28999 )
+                      region = "at"
+                   else if( zipcode >= 43000 && zipcode <= 45999 )
+                      region = "at"
+                   else if( zipcode >= 29000 && zipcode <= 36999 )
+                      region = "se"
+                   else if( zipcode >= 38600 && zipcode <= 39999 )
+                      region = "se"
+                   else if( zipcode >= 46000 && zipcode <= 58999 )
+                      region = "mw"
+                   else if( zipcode >= 60000 && zipcode <= 62999 )
+                      region = "mw"
+                   else if( zipcode >= 68000 && zipcode <= 69999 )
+                      region = "mw"
+                   else if( zipcode >= 63000 && zipcode <= 67999 )
+                      region = "cp"
+                   else if( zipcode >= 71600 && zipcode <= 74999 )
+                      region = "cp"
+                   else if( zipcode >= 70000 && zipcode <= 71499 )
+                      region = "sp"
+                   else if( zipcode >= 75000 && zipcode <= 79999 )
+                      region = "sp"
+                   else if( zipcode >= 59000 && zipcode <= 59999 )
+                      region = "nw"
+                   else if( zipcode >= 82000 && zipcode <= 83999 )
+                      region = "nw"
+                   else if( zipcode >= 97000 && zipcode <= 99499 )
+                      region = "nw"
+                   else if( zipcode >= 80000 && zipcode <= 81999 )
+                      region = "sw"
+                   else if( zipcode >= 84000 && zipcode <= 96199 )
+                      region = "sw"
+
+                   if( region != "" ){
+                      document.write( "<table border=\"0\" align=\"center\" class=\"grey\" width=\"100%\">" )
+                      document.write( "<tr>" )
+                      document.write( "<td valign=\"top\">" )
+                      document.write( "<a href=/surface/sfc_map.php?image=sfc&inv=0&t=cur&region=" + region +">" )
+                      document.write( "<b>Sfc" )
+                      document.write( "</b></a>" )
+                      document.write( "</td>" )
+                      document.write( "<td valign=\"top\">" )
+                      document.write( "<a href=\"radar/rad" + region + ".php\">" )
+                      document.write( "<a href=/radar/rcm_rad.php?image=rad&inv=0&t=cur&region=" + region +">" )
+                      document.write( "<b>Rad" )
+                      document.write( "</b></a>" )
+                      document.write( "</td>" )
+                      document.write( "<td valign=\"top\">" )
+                      document.write( "<a href=/satellite/sat_vis.php?image=vis&inv=0&t=cur&region=" + region +">" )
+                      document.write( "<b>Vis" )
+                      document.write( "</b></a>" )
+                      document.write( "</td>" )
+                      document.write( "<td valign=\"top\">" )
+                      document.write( "<a href=/satellite/sat_vis.php?image=enh&inv=0&t=cur&region=" + region +">" )
+                      document.write( "<b>IR" )
+                      document.write( "</b></a>" )
+                      document.write( "</td>" )
+                      document.write( "</tr></table>" )
+                      document.write( "</b>" )
+                      }
+
+
+                   
+                   }
+                // UNHIDE -->
+                </script>
+  <ul class="avmenu">
+    <li><a href="http://weather.unisys.com/links.php" class="blue">NOAA Links</a></li>
+    <li><a href="http://lwf.ncdc.noaa.gov/">National Climatic Data Center</a></li>
+    <li><a href="http://www.cpc.noaa.gov/">Climate Prediction Center</a></li>
+    <li><a href="http://oceanservice.noaa.gov/">National Ocean Service</a></li>
+    <li><a href="http://www.lib.noaa.gov/">NOAA Library</a></li>
+    <li><a href="http://www.oar.noaa.gov/">NOAA Office of Oceanic and Atmospheric Research</a></li>
+    <li><a href="http://www.esrl.noaa.gov/">Earth Systems Research Laboratory</a></li>
+    <li><a href="http://weather.unisys.com/overview.php" class="blue">About Us</a></li>
+    <li><a href="http://weather.unisys.com/overview.php" title="Contact Us">Overview</a></li>
+    <li><a href="http://weather.unisys.com/contactus.php" title="Contact Us">Contact Us</a></li>
+  </ul>
+  <a href="http://www.nws.noaa.gov/com/weatherreadynation"><img src="http://weather.unisys.com/images/WRN_Ambassador_logo_small.png" width="150" height="114" alt="WRN Logo" border="0" /></a>
+</div>
+<div id="content">
+
+<h2 style="font-family: helvetica,arial,sans-serif;">1956 Hurricane/Tropical Data for Western Pacific</h2>
+<a href="track.gif">
+  <img src="track.gif" width="640" height="512" alt="Track Map"/></a>
+<h3 style="font-family: helvetica,arial,sans-serif;">Individual Storm Summary</h3>
+<p style="font-family: helvetica,arial,sans-serif;">Winds in knots, pressure in millibars,
+category is based on Saffir-Simpson scale.</p>
+<table border="0">
+<tr style="font-size: 10pt; font-family: helvetica,arial,sans-serif; color: black;"><td width="20" align="right">#</td><td width="250">Name</td><td width="125" align="center">Date</td><td width="40" align="right">Wind</td><td width="40" align="right">Pres</td><td width="40" align="right">Cat</td><td>&nbsp;</td>
+</tr>
+<tr><td width="20" align="right" style="color:black;">1</td><td width="250" style="color:black;">Typhoon #1                </td><td width="125" align="right" style="color:black;">21 MAR- 5 APR </td><td width="40" align="right" style="color:black;">125 </td><td width="40" align="right" style="color:black;">   - </td><td width="40" align="right" style="color:black;">  4</td><td>&nbsp;</td>
+</tr>
+<tr><td width="20" align="right" style="color:black;">2</td><td width="250" style="color:black;">Tropical Storm #2         </td><td width="125" align="right" style="color:black;"> 9-14 APR     </td><td width="40" align="right" style="color:black;"> 40 </td><td width="40" align="right" style="color:black;">   - </td><td width="40" align="right" style="color:black;">  -</td><td>&nbsp;</td>
+</tr>
+<tr><td width="20" align="right" style="color:black;">3</td><td width="250" style="color:black;">Super Typhoon #3          </td><td width="125" align="right" style="color:black;">16-25 APR     </td><td width="40" align="right" style="color:black;">150 </td><td width="40" align="right" style="color:black;">   - </td><td width="40" align="right" style="color:black;">  5</td><td>&nbsp;</td>
+</tr>
+<tr><td width="20" align="right" style="color:black;">4</td><td width="250" style="color:black;">Tropical Storm #4         </td><td width="125" align="right" style="color:black;">18-20 JUN     </td><td width="40" align="right" style="color:black;"> 40 </td><td width="40" align="right" style="color:black;">   - </td><td width="40" align="right" style="color:black;">  -</td><td>&nbsp;</td>
+</tr>
+<tr><td width="20" align="right" style="color:black;">5</td><td width="250" style="color:black;">Typhoon #5                </td><td width="125" align="right" style="color:black;"> 5- 8 JUL     </td><td width="40" align="right" style="color:black;"> 80 </td><td width="40" align="right" style="color:black;">   - </td><td width="40" align="right" style="color:black;">  1</td><td>&nbsp;</td>
+</tr>
+<tr><td width="20" align="right" style="color:black;">6</td><td width="250" style="color:black;">Super Typhoon #6          </td><td width="125" align="right" style="color:black;">27 JUL- 3 AUG </td><td width="40" align="right" style="color:black;">160 </td><td width="40" align="right" style="color:black;">   - </td><td width="40" align="right" style="color:black;">  5</td><td>&nbsp;</td>
+</tr>
+<tr><td width="20" align="right" style="color:black;">7</td><td width="250" style="color:black;">Typhoon #7                </td><td width="125" align="right" style="color:black;"> 3- 5 AUG     </td><td width="40" align="right" style="color:black;"> 65 </td><td width="40" align="right" style="color:black;">   - </td><td width="40" align="right" style="color:black;">  1</td><td>&nbsp;</td>
+</tr>
+<tr><td width="20" align="right" style="color:black;">8</td><td width="250" style="color:black;">Tropical Storm #8         </td><td width="125" align="right" style="color:black;"> 9-10 AUG     </td><td width="40" align="right" style="color:black;"> 40 </td><td width="40" align="right" style="color:black;">   - </td><td width="40" align="right" style="color:black;">  -</td><td>&nbsp;</td>
+</tr>
+<tr><td width="20" align="right" style="color:black;">9</td><td width="250" style="color:black;">Typhoon #9                </td><td width="125" align="right" style="color:black;">12-18 AUG     </td><td width="40" align="right" style="color:black;">100 </td><td width="40" align="right" style="color:black;">   - </td><td width="40" align="right" style="color:black;">  3</td><td>&nbsp;</td>
+</tr>
+<tr><td width="20" align="right" style="color:black;">10</td><td width="250" style="color:black;">Typhoon #10               </td><td width="125" align="right" style="color:black;">25 AUG- 2 SEP </td><td width="40" align="right" style="color:black;">110 </td><td width="40" align="right" style="color:black;">   - </td><td width="40" align="right" style="color:black;">  3</td><td>&nbsp;</td>
+</tr>
+<tr><td width="20" align="right" style="color:black;">11</td><td width="250" style="color:black;">Typhoon #11               </td><td width="125" align="right" style="color:black;">29 AUG- 4 SEP </td><td width="40" align="right" style="color:black;"> 95 </td><td width="40" align="right" style="color:black;">   - </td><td width="40" align="right" style="color:black;">  2</td><td>&nbsp;</td>
+</tr>
+<tr><td width="20" align="right" style="color:black;">12</td><td width="250" style="color:black;">Super Typhoon #12         </td><td width="125" align="right" style="color:black;"> 1-11 SEP     </td><td width="40" align="right" style="color:black;">135 </td><td width="40" align="right" style="color:black;">   - </td><td width="40" align="right" style="color:black;">  4</td><td>&nbsp;</td>
+</tr>
+<tr><td width="20" align="right" style="color:black;">13</td><td width="250" style="color:black;">Typhoon #13               </td><td width="125" align="right" style="color:black;">13-19 SEP     </td><td width="40" align="right" style="color:black;"> 85 </td><td width="40" align="right" style="color:black;">   - </td><td width="40" align="right" style="color:black;">  2</td><td>&nbsp;</td>
+</tr>
+<tr><td width="20" align="right" style="color:black;">14</td><td width="250" style="color:black;">Super Typhoon #14         </td><td width="125" align="right" style="color:black;">18-24 SEP     </td><td width="40" align="right" style="color:black;">140 </td><td width="40" align="right" style="color:black;">   - </td><td width="40" align="right" style="color:black;">  5</td><td>&nbsp;</td>
+</tr>
+<tr><td width="20" align="right" style="color:black;">15</td><td width="250" style="color:black;">Typhoon #15               </td><td width="125" align="right" style="color:black;">19-27 SEP     </td><td width="40" align="right" style="color:black;">110 </td><td width="40" align="right" style="color:black;">   - </td><td width="40" align="right" style="color:black;">  3</td><td>&nbsp;</td>
+</tr>
+<tr><td width="20" align="right" style="color:black;">16</td><td width="250" style="color:black;">Typhoon #16               </td><td width="125" align="right" style="color:black;">23-27 SEP     </td><td width="40" align="right" style="color:black;"> 65 </td><td width="40" align="right" style="color:black;">   - </td><td width="40" align="right" style="color:black;">  1</td><td>&nbsp;</td>
+</tr>
+<tr><td width="20" align="right" style="color:black;">17</td><td width="250" style="color:black;">Super Typhoon #17         </td><td width="125" align="right" style="color:black;">16-26 OCT     </td><td width="40" align="right" style="color:black;">130 </td><td width="40" align="right" style="color:black;">   - </td><td width="40" align="right" style="color:black;">  4</td><td>&nbsp;</td>
+</tr>
+<tr><td width="20" align="right" style="color:black;">18</td><td width="250" style="color:black;">Tropical Storm #18        </td><td width="125" align="right" style="color:black;">16-19 OCT     </td><td width="40" align="right" style="color:black;"> 40 </td><td width="40" align="right" style="color:black;">   - </td><td width="40" align="right" style="color:black;">  -</td><td>&nbsp;</td>
+</tr>
+<tr><td width="20" align="right" style="color:black;">19</td><td width="250" style="color:black;">Typhoon #19               </td><td width="125" align="right" style="color:black;">10-21 NOV     </td><td width="40" align="right" style="color:black;"> 95 </td><td width="40" align="right" style="color:black;">   - </td><td width="40" align="right" style="color:black;">  2</td><td>&nbsp;</td>
+</tr>
+<tr><td width="20" align="right" style="color:black;">20</td><td width="250" style="color:black;">Typhoon #21               </td><td width="125" align="right" style="color:black;">24-29 NOV     </td><td width="40" align="right" style="color:black;"> 75 </td><td width="40" align="right" style="color:black;">   - </td><td width="40" align="right" style="color:black;">  1</td><td>&nbsp;</td>
+</tr>
+<tr><td width="20" align="right" style="color:black;">21</td><td width="250" style="color:black;">Typhoon #22               </td><td width="125" align="right" style="color:black;">24-25 NOV     </td><td width="40" align="right" style="color:black;"> 75 </td><td width="40" align="right" style="color:black;">   - </td><td width="40" align="right" style="color:black;">  1</td><td>&nbsp;</td>
+</tr>
+<tr><td width="20" align="right" style="color:black;">22</td><td width="250" style="color:black;">Typhoon #23               </td><td width="125" align="right" style="color:black;"> 7-10 DEC     </td><td width="40" align="right" style="color:black;"> 85 </td><td width="40" align="right" style="color:black;">   - </td><td width="40" align="right" style="color:black;">  2</td><td>&nbsp;</td>
+</tr>
+</table><br/>
+<big style="font-weight: bold;"><span
+ style="font-family: helvetica,arial,sans-serif;"> Saffir-Simpson Scale</span></big>
+      <p style="font-family: helvetica,arial,sans-serif;">The chart
+color codes intensity (category based on Saffir-Simpson scale): </p>
+      <table border="0" style="font-family: helvetica,arial,sans-serif;">
+        <tbody>
+          <tr>
+            <td valign="top" bgcolor="#000099"
+ style="color: rgb(255, 255, 255); font-weight: bold;"><small>Type</small></td>
+            <td align="center" valign="top" bgcolor="#000099"
+ style="color: rgb(255, 255, 255); font-weight: bold;"><small>Category</small></td>
+            <td align="center" valign="top" bgcolor="#000099"
+ style="color: rgb(255, 255, 255); font-weight: bold;"><small>Pressure
+(mb)</small></td>
+            <td align="center" valign="top" bgcolor="#000099"
+ style="color: rgb(255, 255, 255); font-weight: bold;"><small>Winds<br/>
+(knots)</small></td>
+            <td align="center" valign="top" bgcolor="#000099"
+ style="color: rgb(255, 255, 255); font-weight: bold;"><small>Winds<br/>
+(mph)</small></td>
+            <td align="center" valign="top" bgcolor="#000099"
+ style="color: rgb(255, 255, 255); font-weight: bold;"><small>Line Color</small></td>
+          </tr>
+          <tr>
+            <td valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>Depression</small></td>
+            <td align="center" valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>td</small></td>
+            <td
+ style="text-align: center; vertical-align: top; background-color: rgb(160, 224, 255); font-weight: bold;"><small>-----</small></td>
+            <td align="center" valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>&lt; 34</small></td>
+            <td align="center" valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>&lt; 39</small></td>
+            <td align="center" valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>Green</small></td>
+          </tr>
+          <tr>
+            <td valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>Tropical Storm</small></td>
+            <td align="center" valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>TS</small></td>
+            <td align="center" valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>-----</small></td>
+            <td align="center" valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>34-63</small></td>
+            <td align="center" valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>39-73</small></td>
+            <td align="center" valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>Yellow</small></td>
+          </tr>
+          <tr>
+            <td valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>Hurricane</small></td>
+            <td align="center" valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>1</small></td>
+            <td align="center" valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>&gt; 980</small></td>
+            <td align="center" valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>64-82</small></td>
+            <td align="center" valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>74-95</small></td>
+            <td align="center" valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>Red</small></td>
+          </tr>
+          <tr>
+            <td valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>Hurricane</small></td>
+            <td align="center" valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>2</small></td>
+            <td align="center" valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>965-980</small></td>
+            <td align="center" valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>83-95</small></td>
+            <td align="center" valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>96-110</small></td>
+            <td align="center" valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>Light Red</small></td>
+          </tr>
+          <tr>
+            <td valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>Hurricane</small></td>
+            <td align="center" valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>3</small></td>
+            <td align="center" valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>945-965</small></td>
+            <td align="center" valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>96-112</small></td>
+            <td align="center" valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>111-130</small></td>
+            <td align="center" valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>Magenta</small></td>
+          </tr>
+          <tr>
+            <td valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>Hurricane</small></td>
+            <td align="center" valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>4</small></td>
+            <td align="center" valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>920-945</small></td>
+            <td align="center" valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>113-135</small></td>
+            <td align="center" valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>131-155</small></td>
+            <td align="center" valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>Light Magenta</small></td>
+          </tr>
+          <tr>
+            <td valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>Hurricane</small></td>
+            <td align="center" valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>5</small></td>
+            <td align="center" valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>&lt; 920</small></td>
+            <td align="center" valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>&gt;135</small></td>
+            <td align="center" valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>&gt;155</small></td>
+            <td align="center" valign="top" bgcolor="#a0e0ff"
+ style="font-weight: bold;"><small>White</small></td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="font-family: helvetica,arial,sans-serif;"><small><b>NOTE:</b>
+Pressures are in millibars and winds are in <b>knots</b> where one knot
+is equal to 1.15 mph</small></p><hr/>
+<h3 style="font-family: helvetica,arial,sans-serif;">Individual Storm Details</h3>
+<table border="1" style="font-family: helvetica,arial,sans-serif;">
+
+<tr><td valign="top">
+<a href="23/track.gif"><img src="23/track_s.gif" width="240" height="160" alt="Track"/></a></td><td valign="top"><b>
+Typhoon #23</b> (07-10 DEC)<br/>Storm -  Max Winds: 85 Category: 2<a href="23/track.dat">
+<img src="/images/DETAILS.gif" width="49" height="13" border="0" alt="Track"/>Tracking information</a><br/>
+</td></tr>
+
+<tr><td valign="top">
+<a href="22/track.gif"><img src="22/track_s.gif" width="240" height="160" alt="Track"/></a></td><td valign="top"><b>
+Typhoon #22</b> (24-25 NOV)<br/>Storm -  Max Winds: 75 Category: 1<a href="22/track.dat">
+<img src="/images/DETAILS.gif" width="49" height="13" border="0" alt="Track"/>Tracking information</a><br/>
+</td></tr>
+
+<tr><td valign="top">
+<a href="21/track.gif"><img src="21/track_s.gif" width="240" height="160" alt="Track"/></a></td><td valign="top"><b>
+Typhoon #21</b> (24-29 NOV)<br/>Storm -  Max Winds: 75 Category: 1<a href="21/track.dat">
+<img src="/images/DETAILS.gif" width="49" height="13" border="0" alt="Track"/>Tracking information</a><br/>
+</td></tr>
+
+<tr><td valign="top">
+<a href="19/track.gif"><img src="19/track_s.gif" width="240" height="160" alt="Track"/></a></td><td valign="top"><b>
+Typhoon #19</b> (10-21 NOV)<br/>Storm -  Max Winds: 95 Category: 2<a href="19/track.dat">
+<img src="/images/DETAILS.gif" width="49" height="13" border="0" alt="Track"/>Tracking information</a><br/>
+</td></tr>
+
+<tr><td valign="top">
+<a href="18/track.gif"><img src="18/track_s.gif" width="240" height="160" alt="Track"/></a></td><td valign="top"><b>
+Tropical Storm #18</b> (16-19 OCT)<br/>Storm -  Max Winds: 40<a href="18/track.dat">
+<img src="/images/DETAILS.gif" width="49" height="13" border="0" alt="Track"/>Tracking information</a><br/>
+</td></tr>
+
+<tr><td valign="top">
+<a href="17/track.gif"><img src="17/track_s.gif" width="240" height="160" alt="Track"/></a></td><td valign="top"><b>
+Super Typhoon #17</b> (16-26 OCT)<br/>Storm -  Max Winds: 130 Category: 4<a href="17/track.dat">
+<img src="/images/DETAILS.gif" width="49" height="13" border="0" alt="Track"/>Tracking information</a><br/>
+</td></tr>
+
+<tr><td valign="top">
+<a href="16/track.gif"><img src="16/track_s.gif" width="240" height="160" alt="Track"/></a></td><td valign="top"><b>
+Typhoon #16</b> (23-27 SEP)<br/>Storm -  Max Winds: 65 Category: 1<a href="16/track.dat">
+<img src="/images/DETAILS.gif" width="49" height="13" border="0" alt="Track"/>Tracking information</a><br/>
+</td></tr>
+
+<tr><td valign="top">
+<a href="15/track.gif"><img src="15/track_s.gif" width="240" height="160" alt="Track"/></a></td><td valign="top"><b>
+Typhoon #15</b> (19-27 SEP)<br/>Storm -  Max Winds: 110 Category: 3<a href="15/track.dat">
+<img src="/images/DETAILS.gif" width="49" height="13" border="0" alt="Track"/>Tracking information</a><br/>
+</td></tr>
+
+<tr><td valign="top">
+<a href="14/track.gif"><img src="14/track_s.gif" width="240" height="160" alt="Track"/></a></td><td valign="top"><b>
+Super Typhoon #14</b> (18-24 SEP)<br/>Storm -  Max Winds: 140 Category: 5<a href="14/track.dat">
+<img src="/images/DETAILS.gif" width="49" height="13" border="0" alt="Track"/>Tracking information</a><br/>
+</td></tr>
+
+<tr><td valign="top">
+<a href="13/track.gif"><img src="13/track_s.gif" width="240" height="160" alt="Track"/></a></td><td valign="top"><b>
+Typhoon #13</b> (13-19 SEP)<br/>Storm -  Max Winds: 85 Category: 2<a href="13/track.dat">
+<img src="/images/DETAILS.gif" width="49" height="13" border="0" alt="Track"/>Tracking information</a><br/>
+</td></tr>
+
+<tr><td valign="top">
+<a href="12/track.gif"><img src="12/track_s.gif" width="240" height="160" alt="Track"/></a></td><td valign="top"><b>
+Super Typhoon #12</b> (01-11 SEP)<br/>Storm -  Max Winds: 135 Category: 4<a href="12/track.dat">
+<img src="/images/DETAILS.gif" width="49" height="13" border="0" alt="Track"/>Tracking information</a><br/>
+</td></tr>
+
+<tr><td valign="top">
+<a href="11/track.gif"><img src="11/track_s.gif" width="240" height="160" alt="Track"/></a></td><td valign="top"><b>
+Typhoon #11</b> (29 AUG-04 SEP)<br/>Storm -  Max Winds: 95 Category: 2<a href="11/track.dat">
+<img src="/images/DETAILS.gif" width="49" height="13" border="0" alt="Track"/>Tracking information</a><br/>
+</td></tr>
+
+<tr><td valign="top">
+<a href="10/track.gif"><img src="10/track_s.gif" width="240" height="160" alt="Track"/></a></td><td valign="top"><b>
+Typhoon #10</b> (25 AUG-02 SEP)<br/>Storm -  Max Winds: 110 Category: 3<a href="10/track.dat">
+<img src="/images/DETAILS.gif" width="49" height="13" border="0" alt="Track"/>Tracking information</a><br/>
+</td></tr>
+
+<tr><td valign="top">
+<a href="9/track.gif"><img src="9/track_s.gif" width="240" height="160" alt="Track"/></a></td><td valign="top"><b>
+Typhoon #9</b> (12-18 AUG)<br/>Storm -  Max Winds: 100 Category: 3<a href="9/track.dat">
+<img src="/images/DETAILS.gif" width="49" height="13" border="0" alt="Track"/>Tracking information</a><br/>
+</td></tr>
+
+<tr><td valign="top">
+<a href="8/track.gif"><img src="8/track_s.gif" width="240" height="160" alt="Track"/></a></td><td valign="top"><b>
+Tropical Storm #8</b> (09-10 AUG)<br/>Storm -  Max Winds: 40<a href="8/track.dat">
+<img src="/images/DETAILS.gif" width="49" height="13" border="0" alt="Track"/>Tracking information</a><br/>
+</td></tr>
+
+<tr><td valign="top">
+<a href="7/track.gif"><img src="7/track_s.gif" width="240" height="160" alt="Track"/></a></td><td valign="top"><b>
+Typhoon #7</b> (03-05 AUG)<br/>Storm -  Max Winds: 65 Category: 1<a href="7/track.dat">
+<img src="/images/DETAILS.gif" width="49" height="13" border="0" alt="Track"/>Tracking information</a><br/>
+</td></tr>
+
+<tr><td valign="top">
+<a href="6/track.gif"><img src="6/track_s.gif" width="240" height="160" alt="Track"/></a></td><td valign="top"><b>
+Super Typhoon #6</b> (27 JUL-03 AUG)<br/>Storm -  Max Winds: 160 Category: 5<a href="6/track.dat">
+<img src="/images/DETAILS.gif" width="49" height="13" border="0" alt="Track"/>Tracking information</a><br/>
+</td></tr>
+
+<tr><td valign="top">
+<a href="5/track.gif"><img src="5/track_s.gif" width="240" height="160" alt="Track"/></a></td><td valign="top"><b>
+Typhoon #5</b> (05-08 JUL)<br/>Storm -  Max Winds: 80 Category: 1<a href="5/track.dat">
+<img src="/images/DETAILS.gif" width="49" height="13" border="0" alt="Track"/>Tracking information</a><br/>
+</td></tr>
+
+<tr><td valign="top">
+<a href="4/track.gif"><img src="4/track_s.gif" width="240" height="160" alt="Track"/></a></td><td valign="top"><b>
+Tropical Storm #4</b> (18-20 JUN)<br/>Storm -  Max Winds: 40<a href="4/track.dat">
+<img src="/images/DETAILS.gif" width="49" height="13" border="0" alt="Track"/>Tracking information</a><br/>
+</td></tr>
+
+<tr><td valign="top">
+<a href="3/track.gif"><img src="3/track_s.gif" width="240" height="160" alt="Track"/></a></td><td valign="top"><b>
+Super Typhoon #3</b> (16-25 APR)<br/>Storm -  Max Winds: 150 Category: 5<a href="3/track.dat">
+<img src="/images/DETAILS.gif" width="49" height="13" border="0" alt="Track"/>Tracking information</a><br/>
+</td></tr>
+
+<tr><td valign="top">
+<a href="2/track.gif"><img src="2/track_s.gif" width="240" height="160" alt="Track"/></a></td><td valign="top"><b>
+Tropical Storm #2</b> (09-14 APR)<br/>Storm -  Max Winds: 40<a href="2/track.dat">
+<img src="/images/DETAILS.gif" width="49" height="13" border="0" alt="Track"/>Tracking information</a><br/>
+</td></tr>
+
+<tr><td valign="top">
+<a href="1/track.gif"><img src="1/track_s.gif" width="240" height="160" alt="Track"/></a></td><td valign="top"><b>
+Typhoon #1</b> (21 MAR-05 APR)<br/>Storm -  Max Winds: 125 Category: 4<a href="1/track.dat">
+<img src="/images/DETAILS.gif" width="49" height="13" border="0" alt="Track"/>Tracking information</a><br/>
+</td></tr>
+
+</table>
+<div class="clearboth">&nbsp;</div>
+
+</div>
+
+<div id="footer"> <span id="copyright"><small>Copyright &copy; Unisys 2016</small></span>
+  <ul class="inline-navigation-list" id="bottom-navigation">
+    <li><a href="http://www.unisys.com/unisys/privacy.html" target="_blank">Privacy Notice</a></li>
+    <li><a href="http://www.unisys.com/unisys/terms-and-conditions.html" target="_blank">Terms of Use</a></li>
+    <li><a href="http://weather.unisys.com/contactus.php">Contact Us</a></li>
+    <li><a href="http://www.unisys.com/unisys/trademarks.html" target="_blank">Trademarks</a></li>
+  </ul>
+</div>
+</div>
+</body>
+</html>
