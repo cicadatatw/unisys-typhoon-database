@@ -15,8 +15,9 @@ top_path = "http://weather.unisys.com/hurricane/w_pacific/"
 
 
 pat1 = /<a href="(\d{4}\/index.php)">/
-pat2 = /<tr><td width="20" align="right" style="color:black;">(\d+)<\/td><td width="250" style="color:black;">([\w\s]+ #\d+)\s+<\/td><td width="125" align="right" style="color:black;">([\w\d\s\-]+)\s+<\/td><td width="40" align="right" style="color:black;">\s?(\d+)\s<\/td><td width="40" align="right" style="color:black;">\s*([\d\-]+)\s+<\/td><td width="40" align="right" style="color:black;">\s+([\d\-]+)<\/td><td>&nbsp;<\/td>/
+pat2 = /<tr><td width="20" align="right" style="color:black;">(\d+)<\/td><td width="250" style="color:black;">([\w\s\d#]+)\s+<\/td><td width="125" align="right" style="color:black;">([\w\d\s\-]+)\s+<\/td><td width="40" align="right" style="color:black;">\s?(\d+)\s<\/td><td width="40" align="right" style="color:black;">\s*([\d\-\s]+)\s+<\/td><td width="40" align="right" style="color:black;">\s+([\d\-]+)<\/td><td>&nbsp;<\/td>/
 pat3 = /(\d{1,3})\s+(\d+\.\d+)\s+(\d+\.\d+)\s(\d{2}\/\d{2}\/\d{2}Z)\s{1,5}([\d\-]+)\s{1,5}(\-|\d{3,4})\s([\w]+[\-\s][\w\d]+)$/
+pat4 = /<a href="(\w+\/track.dat)">/
 
 if year == "all"
 	top_page = open(top_url).read
@@ -42,7 +43,12 @@ for year in years
 	tmp = open(page_url).read
 	data = tmp.scan(pat2)
 	for datum in data
-		dat_url = top_path + yr + '/' + datum[0] + "/track.dat"
+		if yr.to_i > 2012
+			typhoon_name = (datum[1].split)[2]
+			dat_url = top_path + yr + '/' + typhoon_name + "/track.dat"
+		else
+			dat_url = top_path + yr + '/' + datum[0] + "/track.dat"
+		end
 		puts "\tfetching: " + dat_url
 		begin
 			dat = open(dat_url).read
